@@ -1,5 +1,3 @@
-function doClick(e) {
-	alert($.label.text);
+if (OS_IOS) {
+		$.nav.open();
 }
-
-$.index.open();
