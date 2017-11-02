@@ -1,6 +1,6 @@
 <Alloy>
     <Window id="wrapper" class="vgroup" title="Hello World">
-      <!-- <SearchBar id="searchBar" platform="ios" class="search" onBookmark="onBookmarkClick" onFocus="onSearchFocus" onCancel="onSearchCancel" onChange="onSearchChange" /> -->
+      <SearchBar id="searchBar" platform="ios" class="search" onBookmark="onBookmarkClick" onFocus="onSearchFocus" onCancel="onSearchCancel" onChange="onSearchChange" />
 
       <ListView id="listView" defaultItemTemplate="userTemplate" class="template">
           <Templates>
