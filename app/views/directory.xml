@@ -1,7 +1,6 @@
 <Alloy>
     <Window id="wrapper" class="vgroup" title="Hello World">
       <!-- <SearchBar id="searchBar" platform="ios" class="search" onBookmark="onBookmarkClick" onFocus="onSearchFocus" onCancel="onSearchCancel" onChange="onSearchChange" /> -->
-      <SearchBar id="searchBar" platform="ios" class="search" />
 
       <ListView id="listView" defaultItemTemplate="userTemplate" class="template">
           <Templates>
@@ -16,6 +15,21 @@
                       <View class="gray-line bottom" />
                   </View>
               </ItemTemplate>
+
+              <!-- favoriteTemplate -->
+              <ItemTemplate id="favoriteTemplate" name="favoriteTemplate" class="template">
+                  <View class="left-buffer">
+                      <ImageView id="userPhoto" bindId="userPhoto" class="avator" />
+                      <View class="vgroup left size">
+                          <Label id="userName" bindId="userName" class="title" />
+                          <Label id="userEmail" bindId="userEmail" class="subtitle" />
+                          <Label id="userCompany" bindId="userCompany" class="subtitle" />
+                      </View>
+                      <Label class="favorite" />
+                      <View class="gray-line bottom" />
+                  </View>
+              </ItemTemplate>
+
           </Templates>
       </ListView>
     </Window>
